@@ -2,6 +2,6 @@
 <Configuration>
   <Excluded>
     <exclude>.git</exclude>
-    <exclude>Images</exclude>
+    <exclude>CropStats.textstudio</exclude>
   </Excluded>
 </Configuration>

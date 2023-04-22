@@ -1,6 +1,6 @@
-# ![HarvestableNeutroamine](./About/Preview.png)
+# ![CropStats](./About/Preview.png)
 
-Adds support for harvesting neutroamine from human corpses!
+Find the most efficient crops!
 
 ## Existing Saves
 
@@ -11,5 +11,3 @@ This mod is should safe to add to or remove from existing saves!
 Let me know if there are any bugs or requests, I'll happily do my best to fix them up!
 
 Please try resetting rocketman cache before reporting issues!
-
-MIT License | Open to contributions and suggestions!
