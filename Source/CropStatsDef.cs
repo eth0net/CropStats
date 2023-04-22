@@ -15,7 +15,7 @@ public class CropStatsDef : ThingDef
             yield return stat;
         }
 
-        yield return new StatDrawEntry(StatCategoryDefOf.Basics, "Efficiency".Translate(), Efficiency.ToStringSafe(),
+        yield return new StatDrawEntry(StatCategoryDefOf.Basics, "Efficiency".Translate(), Efficiency.ToString("0.00"),
             "EfficiencyDesc".Translate(), 1000);
     }
 }
