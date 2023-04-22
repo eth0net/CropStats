@@ -51,7 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CropStats.cs" />
-    <Compile Include="CropStatsComp.cs" />
+    <Compile Include="CropStatsDef.cs" />
+    <Compile Include="CropStatsUtility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

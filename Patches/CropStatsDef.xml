@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>/Defs/ThingDef[@ParentName="PlantBase"]</xpath>
+    <attribute>Class</attribute>
+    <value>CropStats.CropStatsDef</value>
+  </Operation>
+</Patch>
