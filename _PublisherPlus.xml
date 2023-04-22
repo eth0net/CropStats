@@ -2,6 +2,9 @@
 <Configuration>
   <Excluded>
     <exclude>.git</exclude>
+    <exclude>CropStats.sln</exclude>
     <exclude>CropStats.textstudio</exclude>
+    <exclude>README.md</exclude>
+    <exclude>Source</exclude>
   </Excluded>
 </Configuration>
