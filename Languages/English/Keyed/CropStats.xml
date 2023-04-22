@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <Efficiency>Efficiency</Efficiency>
+    <EfficiencyDesc>The efficiency of this crop, higher values mean more nutrition growth per day.</EfficiencyDesc>
+</LanguageData>
