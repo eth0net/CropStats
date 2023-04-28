@@ -6,7 +6,15 @@ namespace CropStats;
 
 public class CropStatsDef : ThingDef
 {
-    public float Efficiency => this.CropEfficiency();
+    private float? _cachedEfficiency;
+
+    public float Efficiency => _cachedEfficiency ??= CropEfficiency();
+
+    private float CropEfficiency()
+    {
+        var nutrition = plant.harvestedThingDef.statBases.FirstOrDefault(stat => stat.stat == StatDefOf.Nutrition);
+        return plant.harvestYield * nutrition.value / plant.growDays;
+    }
 
     public override IEnumerable<StatDrawEntry> SpecialDisplayStats(StatRequest req)
     {
@@ -15,7 +23,12 @@ public class CropStatsDef : ThingDef
             yield return stat;
         }
 
-        yield return new StatDrawEntry(StatCategoryDefOf.Basics, "Efficiency".Translate(), Efficiency.ToString("0.00"),
-            "EfficiencyDesc".Translate(), 1000);
+        yield return new StatDrawEntry(
+            StatCategoryDefOf.Basics,
+            "Efficiency".Translate(),
+            Efficiency.ToString("0.00"),
+            "EfficiencyDesc".Translate(),
+            1000
+        );
     }
 }
